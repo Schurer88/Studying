@@ -1,0 +1,860 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*                         !*Урок 10*!*/
+/*
+body {
+    padding: 30px;
+}
+
+.block {
+    margin: 0px 0px 30px 0px;
+}
+
+.block p:nth-child(odd){
+    background: yellow;
+}
+.block p:nth-child(even){
+    background: greenyellow;
+}
+/*якщо в блоці добавити ще один div то не буде працювати*/
+/*.block div{
+    margin: 0px 0px 30px 0px;
+}
+
+.block p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0px 20px 0px;
+}
+
+.link{
+    color: red;
+}
+.link:visited{
+    color: green;
+}
+.link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.link:active{
+    color: yellow;
+}
+
+
+.textinput{
+    border: 1px solid #666;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    width: 300px;
+    margin: 0px 0px 10px 0px;
+}
+
+.textinput:focus{
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+.textbutton{
+    display: block;
+    width: 300px;
+    height: 50px;
+    background: #666;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
+}
+
+.textbutton:hover{
+    background: #333;
+    color: yellow;
+}
+.textbutton:active{
+    background: #eee;
+}
+
+.list{
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+}
+
+.list li{
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+}
+
+.list li:first-child{
+    color: green;
+}
+.list li:last-child{
+    color: yellow;
+}
+.list li:nth-child(odd){
+    color: rebeccapurple;
+    text-transform: uppercase;
+}
+/*odd для не парних чисел
+even для парних чисел*/
+
+/*Урок 11*/
+/*
+body {
+    padding: 30px;
+}
+.text{
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0px 0px 30px 0px;
+}
+.text:first-line{
+    color: green;
+}
+.text:first-letter{
+    color: red;
+    font-size: 30px;
+}
+.list{
+
+}
+.list li{
+    font-size: 24px;
+    margin: 0px 0px 20px 0px;
+}
+.list li:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+.list li:hover:before{
+    background: green;
+
+}
+
+ */
+
+/* Урок 12*/
+
+
+/*
+body {
+    padding: 30px;
+    font-family: Arial, Helvetica, Helvetica Neue sans-serif;
+}
+/*
+.block{
+    border: 5px solid red;
+    max-width: 800px;
+    margin: 0px auto;
+    height: 1500px;
+    position: relative;
+}
+.block div{
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+/*
+}
+.block_1{
+    background-color: #ece89d ;
+  /*  position: relative;
+    z-index: 1;
+*/
+/*
+.block_2{
+    background-color: #5e5373 ;
+    color: #eeeeee;
+    position: sticky;
+    top: 0px;
+
+  /*  position: relative;
+    left: 50px;
+    top: 60px;*/
+/*
+.block_3{
+    background-color: #18b5a4 ;
+
+   /* position: relative;
+    z-index: 2; */
+/*
+.block_4{
+    background-color: #ecef9d ;
+    position: sticky;
+    top: 0px;
+
+}
+
+/* Приклад два*/
+/*
+.block{
+    border: 5px solid red;
+    max-width: 800px;
+    margin: 0px auto;
+    height: 1500px;
+    position: relative;
+}
+.block div{
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+    }
+    .block_1{
+        background-color: #ece89d ;
+        width: 50%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+}
+.block_2 {
+    background-color: #5e5373;
+    color: #eeeeee;
+    position: absolute;
+    width: 50%;
+    right: 0px;
+    top: 0px;
+}
+
+.block_3 {
+    background-color: forestgreen;
+    color: #eeeeee;
+    position: relative;
+    z-index: 2
+    width: 0%;
+    left: 0%;
+    top: 300px;
+}
+
+ */
+
+/*Приклад*/
+/*
+.block{
+    border: 5px solid red;
+    max-width: 800px;
+    margin: 0px auto;
+    height: 1500px;
+}
+.list{
+    font-size: 18px;
+}
+.list li{
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    padding: 0px 0px 0px 30px;
+}
+.list li:before{
+    content: "";
+    background: url("img/li.svg")0 0 no-repeat ;
+    width: 20px;
+    height:20px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+
+}
+*/
+/*
+body {
+    font-family: Arial, Helvetica, Helvetica Neue sans-serif;
+}
+.block{
+   /* text-align: center;*/
+/*
+.block_row{
+    /*display: inline-flex;*/
+/*  display: flex;
+  border: 20px solid #ece89d;
+  margin: 0px 0px 30px 0px;
+  /*justify-content: flex-start;*/
+/*justify-content: flex-end;*/
+/*justify-content: center;*/
+/*justify-content: space-between;*/
+/*justify-content: space-around;*/
+/*flex-wrap: wrap;*/
+/*align-items: center;*/
+/*  flex-direction: column;
+}
+.block_column_1{
+  order: 3;
+}
+.block_column_2{
+  order: 2;
+}
+.block_column_3{
+  order: 1;
+}
+
+
+
+
+
+.block_colum{
+  border: 20px solid #5e5373;
+  &:nth-child(2){
+      .block_item{font-size: 80px;}
+  }
+}
+.block_item{
+  background-color: #18b5a4;
+  padding: 50px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+}
+.block_list{
+  display: flex;
+  align-items: center;
+  li{margin: 0px 15px 0px 0px;}
+}
+.block_info{
+ position: relative;
+  padding: 0px 0px 0px 25px;
+}
+
+ */
+/* Практика Flexbox
+body {
+font-family: Arial, Helvetica, Helvetica Neue sans-serif;
+}
+.wrapper{
+min-height: 100%;
+overflow: hidden;
+
+display: flex;
+flex-direction:  column;
+}
+
+.container{
+max-width: 1180px;
+margin: 0 auto;
+}
+
+.content{
+flex: 1 1 auto;
+}
+
+.hi{
+background-color: #445162;
+padding: 50px 0;
+}
+
+.hi_row{
+display: flex;
+justify-content:  space-between;
+}
+.hi_body{
+color: #fff;
+padding: 0px 20px 0px 0px;
+}
+.hi_title{
+text-shadow: 1px 1px 0px rgb(0 0 0 0.3);
+font-size: 60px;
+margin:  0px 0px 40px 0px;
+}
+
+.hi_list li{
+background: url("img/img_flex/icons/icon.png") left no-repeat ;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+font-size: 20px;
+padding: 0px 0px 0px 36px;
+margin: 0px 0px 15px 0px;
+}
+.hi_list li:last-child{
+margin: 0;
+}
+
+.title{
+color: #445161;
+font-size: 30px;
+
+}
+
+.what{
+padding:  50px 0;
+}
+.what_row{
+display:  flex;
+}
+.what_image{
+flex: 0 0 430px;
+}
+.what_image img{
+max-width:  100%;
+}
+.what_body{
+flex:  1 1 auto;
+padding: 0px 0px 0px 38px;
+}
+.what_title{
+margin: 0px 0px 35px 0px;
+}
+.what_text{
+margin: 0px 0px 15px 0px;
+}
+
+
+.footer {
+background-color: #f5f5f5;
+
+}
+.footer_row{
+display: flex;
+height: 65px;
+justify-content: center;
+align-items: center;
+}
+.footer_text{
+color: #445162;
+font-size: 12px;
+letter-spacing: 0px 3px;
+}
+*/
+/*Практика Flexbox по прикладу
+body {
+font-family: Arial, Helvetica, Helvetica Neue sans-serif;
+
+.block{
+
+}
+
+.block__row{
+
+border: 15px solid #ece89d;
+display: inline-flex;
+height: 150px;
+align-items: flex-start;
+}
+
+.block__element{
+
+border: 5px solid #ffffff;
+height: 100px;
+width: 100px;
+
+}
+
+/* контент */
+/*   .block__content{
+       background-color: #ffffff; /* плюс інші стилі для тексту, відступи */
+
+
+/*.grid_body{*/
+/*    display: grid;*/
+
+/*    grid-template-columns:repeat(3, 1fr);*/
+/*    grid-template-rows: 50% 50% ;*/
+/*}*/
+/*.grid_item{*/
+/*    text-align: center;*/
+/*    border: 2px dashed midnightblue;*/
+/*    padding: 30px;*/
+/*}*/
+/*!*Імена областей*!*/
+
+/*.grid_wrapper{*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            "header header"*/
+/*            "side content" ;*/
+/*    grid-template-columns: 150px 1fr ;*/
+/*    grid-template-rows: 100px 1fr ;*/
+/*}*/
+/*.grid_content{*/
+/*    padding: 30px;*/
+/*    border: 2px solid red;*/
+/*    margin: 0px 0px 30px 0px;*/
+/*}*/
+/*.grid_header{*/
+/*    grid-area: header;*/
+/*}*/
+/*.grid_side{*/
+/*    grid-area: side;*/
+/*}*/
+/*.grid_content{*
+/*    grid-area: content;*/
+/*}*/
+/*.grid_side{*/
+/*    padding: 30px;*/
+/*    border: 2px solid #000;*/
+/*    margin: 0px 0px 30px 0px;*/
+
+/*}*/
+/*.grid_header{*/
+/*    padding: 30px;*/
+/*    border: 2px solid green;*/
+/*    margin: 0px 0px 30px 0px;*/
+/*}*/
+
+/* Задача від чата №2 Створити картку профілю користувача*/
+
+/*.block{*/
+/*    font-size: 30px;*/
+/*    padding: 30px;*/
+/*    color: midnightblue;*/
+/*    background: azure;*/
+/*    text-decoration: underline;*/
+/*}*/
+/*img{*/
+/*    border-radius: 50%;*/
+/*    border: 10px solid coral;*/
+/*    margin: 30px auto;*/
+/*    display: block;*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+/*    transform: scale(1.05);*/
+/*    transition: all 0.3s ease;*/
+
+/*}*/
+/*.name{*/
+/*    text-shadow: 2px 2px 2px darkred;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.textbutton2{*/
+/*    color: red;*/
+/*    border-radius: 5px;*/
+
+/*}*/
+/*.textbutton2:hover {*/
+/*    color: red;*/
+body {
+    height: 2000px;
+    background: #f2f3f5;
+    justify-content: center
+    align-items: center;
+}
+
+.sale img {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.c1 {
+    padding: 0px 0px 0px 100px;
+}
+
+.block {
+    display: flex;
+    background-color: #e95d2a;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0px 0px 0px 100px;
+}
+
+/* Ховаємо чекбокс */
+.dropdown-checkbox {
+    display: none;
+}
+
+/* Стилі для кнопки */
+.dropdown-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e95d2a;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Випадаючий вміст (прихований за замовчуванням) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Показуємо випадаючий вміст при активному чекбоксі */
+.dropdown-checkbox:checked ~ .dropdown-content {
+    display: block;
+}
+
+/* Стилі для пунктів меню */
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    background: white;
+}
+
+.dropdown-content a:hover {
+    background-color: wheat;
+}
+
+
+select[name="sity"] {
+    margin: 10px 0px 0px 0px;
+    background-color: #e95d2a;
+    color: white;
+}
+
+option {
+    background: white;
+    color: black;
+}
+
+label {
+    color: white;
+    margin: 4px 0px 0px 0px;
+}
+
+.client a {
+    color: white;
+    margin: 0px 0px 0px 200px;
+
+}
+
+.client a:hover {
+    color: yellow;
+}
+
+.client {
+    padding: 13px 0px 0px 0px;
+    margin: 0px 0px 0px 200px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #dc5828; /* помаранчевий */
+    padding: 10px 10px;
+    width: 600px;
+    gap: 10px;
+}
+
+.search-box .icon {
+    color: white;
+    font-size: 16px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 100px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f08050;
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.search-box .clear-btn {
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.search-box button {
+    background-color: #f3b79c;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #e3997a;
+
+}
+
+.block-searh {
+    display: flex;
+    width: auto;
+    position: sticky;
+    top: 0;
+}
+
+.foto1 img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 20px 0px 0px;
+}
+
+<
+style >
+.menu {
+    width: 250px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    margin: 0px 0px 0px 260px;
+
+
+}
+
+.menu-item {
+    position: relative; /* Для позиціонування submenu */
+    display: block;
+}
+
+.menu-item input {
+    display: none; /* Ховаємо прапорець */
+}
+
+.menu-item label {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer; /* Рука при наведенні */
+}
+
+.submenu {
+    display: none; /* Приховуємо підменю за замовчуванням */
+    position: absolute;
+    top: 100%; /* Розташовуємо під label */
+    left: 0;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu a {
+    display: block;
+    padding: 8px;
+    color: #333;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-item input:checked ~ .submenu {
+    display: block; /* Показуємо підменю, коли прапорець активний */
+}
+
+</style >
+
+
+.block-promo{
+    display: flex;
+    flex-direction: row;
+    margin: -690px 0px 0px 515px;
+    padding: 0px;0px;0px;0px;
+}
+
+
+.p1{
+    margin: 0px 0px 0px 8px;
+}
+.block-button{
+    display: flex;
+    margin: 0px 0px 0px 510px;
+
+}
+.z1{
+    font-size: 25px;
+
+    margin: 0px 0px 0px 515px;
+    padding: 0px;0px;0px;0px;
+}
+.text{
+    margin: 0px 0px 0px 25px;
+}
+.p1 img:hover{
+    border: 3px solid #8162b2;
+    transition: border 0.2s ease;
+    border-radius: 22px;
+
+}
+.p1 img{
+    border: 1px solid #8162b2;
+    border-radius: 8px;
+}

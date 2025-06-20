@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Заголовок</title>
+</head>
+<style>
+    .menu {
+        width: 250px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+        margin: 0px 0px 0px 260px;
+
+
+    }
+
+    .menu-item {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link {
+        display: block;
+        padding: 10px;
+        background-color: #ffffff;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 200px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .submenu a {
+        display: block;
+        padding: 8px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .submenu a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+    }
+    .block-promo{
+        display: flex;
+        flex-direction: row;
+        margin: -690px 0px 0px 515px;
+        padding: 0px;0px;0px;0px;
+    }
+    .z1{
+        font-size: 25px;
+
+        margin: 0px 0px 0px 515px;
+        padding: 0px;0px;0px;0px;;
+
+    }
+
+    .p1 img:hover{
+        border: 3px solid #8162b2;
+        transition: border 0.2s ease;
+        border-radius: 22px;
+
+    }
+</style>
+<body>
+<!--<h2> Урок 10</h2>-->
+<!--
+<div class="block">
+    <p>
+        <a href="https://www.google.com/" class="link">Унаслідок</a>Унаслідок масованого обстрілу столиці пошкоджено колії та
+        кабелі на перегоні метрополітену між станціями "Дарниця"-
+        "Лівобережна" червоної лінії метро. Поїзди рухатимуться
+        лише між станціями "Академмістечко" – "Арсенальна" з
+        інтервалом орієнтовно 6 хвилин", - -зазначили у КМДА.
+    </p>
+    <p>
+        Унаслідок масованого обстрілу столиці пошкоджено колії та
+        кабелі на перегоні метрополітену між станціями "Дарниця"-
+        "Лівобережна" червоної лінії метро. Поїзди рухатимуться
+        лише між станціями "Академмістечко" – "Арсенальна" з
+        інтервалом орієнтовно 6 хвилин", - -зазначили у КМДА.
+    </p>
+    <p>
+        Унаслідок масованого обстрілу столиці пошкоджено колії та
+        кабелі на перегоні метрополітену між станціями "Дарниця"-
+        "Лівобережна" червоної лінії метро. Поїзди рухатимуться
+        лише між станціями "Академмістечко" – "Арсенальна" з
+        інтервалом орієнтовно 6 хвилин", - -зазначили у КМДА.
+    </p>
+</div>
+<form action="#">
+    <input type="text" class="textinput" />
+    <button class="textbutton" type="submit">Пошук</button>
+</form>
+<ul class="list">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+
+</ul>
+-->
+
+<!--<h2> Урок 11</h2>-->
+<!--
+<p class="text">
+Унаслідок масованого обстрілу столиці пошкоджено колії та
+кабелі на перегоні метрополітену між станціями "Дарниця"-
+"Лівобережна" червоної лінії метро. Поїзди рухатимуться
+лише між станціями "Академмістечко" – "Арсенальна" з
+інтервалом орієнтовно 6 хвилин", - -зазначили у КМДА.
+</p>
+<ul class="list">
+<li>text</li>
+<li>text</li>
+<li>text</li>
+<li>text</li>
+<li>text</li>
+<li>text</li>
+<li>text</li>
+</ul>
+
+-->
+<!--<h2> Урок 12</h2>-->
+
+<!--Приклад один-->
+<!--  <div class="block">
+        <div class="block_1">
+          .block_1
+        </div>
+        <div class="block_2">
+          .block_2
+        </div>
+        <div class="block_3">
+          .block_3
+        </div>
+        <div class="block_4">
+      .block_4
+        </div>
+  </div>
+-->
+<!--<h2>Приклад два</h2>-->
+<!--  <div class="block">
+    <div class="block_1">
+      Підтримувати євроатлантичний курс України, з урахуванням рішень самітів НАТО у Бухаресті (2008), Вільнюсі (2023) та Вашингтоні (2024), а також закликати до ухвалення конкретних рішень на саміті НАТО 2025 року в Гаазі.
+    </div>
+    <div class="block_2">
+      Підтримувати євроатлантичний курс України, з урахуванням рішень самітів НАТО у Бухаресті (2008), Вільнюсі (2023) та Вашингтоні (2024), а також закликати до ухвалення конкретних рішень на саміті НАТО 2025 року в Гаазі.
+    </div>
+    <div class="block_3">
+      Підтримувати євроатлантичний курс України, з урахуванням рішень самітів НАТО у Бухаресті (2008), Вільнюсі (2023) та Вашингтоні (2024), а також закликати до ухвалення конкретних рішень на саміті НАТО 2025 року в Гаазі.
+    </div>
+  </div>
+-->
+<!--практика-->
+<!--
+    <ul class="list">
+      <li>Підтримувати євроатлантичний курс України</li>
+      <li>Підтримувати євроатлантичний курс України</li>
+      <li>Підтримувати євроатлантичний курс України</li>
+      <li>Підтримувати євроатлантичний курс України</li>
+      <li>Підтримувати євроатлантичний курс України</li>
+</ul>
+-->
+
+<!--<h2>Флекси урок один</h2>-->
+<!--
+    <div>
+    <div class="wrapper">
+    <div class="block">
+        <div class="block_row">
+            <div class="block_column block_column_1">
+                <div class="block_item">1</div>
+                </div>
+            <div class="block_column block_column_2">
+                    <div class="block_item">2</div>
+</div>
+            <div class="block_column block_column_3">
+                <div class="block_item">3</div>
+        </div>
+    </div>
+-->
+
+
+<!--        Практика Flexbox                  -->
+<!--
+<div class="wrapper">
+    <div class="content">
+        <div class="hi">
+            <div class="container">
+                <div class="hi_row">
+                    <div class="hi_body">
+                        <div class="hi_title">Привіт друг!</div>
+                        <ul class="hi_list">
+                            <li>У тебе все получиться!</li>
+                            <li>Ніколи не здавайся!</li>
+                            <li>Сьогодні ти знаєш більше ніж вчора!</li>
+                            <li>Дякую тобі за підпримку</li>
+                        </ul>
+                    </div>
+                    <div class="hi_image">
+                        <img src="img/img_flex/image.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="what">
+            <div class="container">
+                <div class="what_row">
+                    <div class="what_image">
+                        <img src="img/img_flex/image_2.jpg" alt="">
+                        <div>
+                            <div class="what_body">
+                                <div class="what_title title">
+                                    Що таке Флексбокс
+                                </div>
+                            </div>
+                            <div class="what_text">
+                                <p>Flexbox (від "Flexible Box") — це метод розташування елементів на сторінці, який дозволяє створювати адаптивні, гнучкі і зручні макети без необхідності використовувати складні обчислення з позиціонуванням чи флоатами.</p>
+                                <p>Flexbox став дуже популярним завдяки своїй простоті та гнучкості, особливо при створенні адаптивних веб-дизайнів.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_row">
+                <div class="footer_text"> Фрілансер 2025</div>
+            </div>
+        </div>
+    </footer>
+</div>
+-->
+
+
+<!--                          *-->
+<!--Практика Flexbox по прикладу-->
+<!--                          -->
+<!--                          <div class="block">-->
+<!--                              &lt;!&ndash;  flex-container  &ndash;&gt;-->
+<!--                              <div class="block__row">-->
+<!--                                  &lt;!&ndash;  flex-element  &ndash;&gt;-->
+<!--                                  <div class="block__element block__element_1">-->
+<!--                                      &lt;!&ndash;  content  &ndash;&gt;-->
+<!--                                      <div class="block__content">Живи тиот тир наров овр тво тво </div>-->
+<!--                                  </div>-->
+<!--                                  &lt;!&ndash;  flex-element  &ndash;&gt;-->
+<!--                                  <div class="block__element block__element_2">-->
+<!--                                      &lt;!&ndash;  content  &ndash;&gt;-->
+<!--                                      <div class="block__content">Живи тиот тир наров овр тво тво</div>-->
+<!--                                  </div>-->
+<!--                                  &lt;!&ndash;  flex-element  &ndash;&gt;-->
+<!--                                  <div class="block__element block__element_3">-->
+<!--                                      &lt;!&ndash;  content  &ndash;&gt;-->
+<!--                                      <div class="block__content">Живи тиот тир наров овр тво тво</div>-->
+<!--                                  </div>-->
+<!--                                  &lt;!&ndash;  flex-element  &ndash;&gt;-->
+<!--                                  <div class="block__element block__element_4">-->
+<!--                                      &lt;!&ndash;  content  &ndash;&gt;-->
+<!--                                      <div class="block__content">Живи тиот тир наров овр тво тво</div>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                          </div>-->
+
+<!--<div class="wrapper">-->
+<!--    <div class="content">-->
+<!--               <h1>GRID Layout</h1>-->
+<!--        <div class="grid">-->
+<!--            <div class="grid_body">-->
+<!--                <div class="grid_item">1</div>-->
+<!--                <div class="grid_item">2</div>-->
+<!--                <div class="grid_item">3</div>-->
+<!--                <div class="grid_item">4</div>-->
+<!--                <div class="grid_item">5</div>-->
+<!--                <div class="grid_item">6</div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--            <h2>Імена областей</h2>-->
+
+<!--        <div class="grid_wrapper">-->
+<!--            <header class="grid_header">Шапка</header>-->
+<!--            <aside class="grid_side">Сандбар</aside>-->
+<!--            <main class="grid_content">Контент</main>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--Задача від чата №1-->
+
+<!--<h1>Заголовок якоїсь теми</h1>-->
+
+<!--<div style="background: #18b5a4;padding: 10px">Масована атака РФ 9 червня: ППО знешкодила 479 дронів і ракет, зокрема 4-->
+<!--    "Кинджали" (-->
+<!--</div>-->
+
+<!--<ul>-->
+<!--    <li>Список номер 1</li>-->
+<!--    <li>Список номер 2</li>-->
+<!--    <li>Список номер 3</li>-->
+<!--    <li>Список номер 4</li>-->
+<!--</ul>-->
+
+<!--<h2>Підзаголовок номер 2</h2>-->
+
+<!--<h3>Підзаголовок номер 3</h3>-->
+
+<!--<img src="img/avatar_3.jpg" alt="">-->
+
+<!--<p>Сили оборони завдали удару по літаках РФ на аеродромі «Саваслейка» </p>-->
+<!--<p>Сили оборони завдали удару по літаках РФ на аеродромі «Саваслейка» </p>-->
+<!--<p>Сили оборони завдали удару по літаках РФ на аеродромі «Саваслейка» </p>-->
+
+
+<!--<form action="#" method="get">-->
+<!--    <h2>Введення:</h2><br>-->
+
+<!--    <input type="text" name="usernamen" placeholder="Введіть ім'я">-->
+<!--    <input type="password" name="userpass" placeholder="<PASSWORD>">-->
+<!--    <input type="tel" name="phone"><br>-->
+
+<!--    <h2>Хто ти:</h2>-->
+
+<!--    <div>-->
+<!--        <p>-->
+<!--            <input type="radio" name="gender" value="male">-->
+<!--            Чоловік-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--            <input type="radio" name="gender" value="female">-->
+<!--            Жінка-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--            <input type="radio" name="gender" value="other">-->
+<!--            Інше створіння-->
+<!--        </p>-->
+<!--    </div>-->
+<!--    <br>-->
+
+<!--    <h2>Майно:</h2>-->
+
+<!--    <div>-->
+<!--        <p>-->
+<!--            <input type="checkbox" name="bike" value="yes">Велосипед-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--            <input type="checkbox" name="car" value="yes">Авто-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--            <input type="checkbox" name="house" value="yes">Дім-->
+<!--        </p>-->
+<!--    </div>-->
+<!--    <br>-->
+
+<!--    <h2>Додаткова інформація:</h2>-->
+
+<!--    <div>-->
+<!--        <p>-->
+<!--            <textarea name="info" cols="30" rows="10"></textarea>-->
+<!--        </p>-->
+<!--    </div>-->
+
+<!--    <h2>Завантаження фото:</h2>-->
+
+<!--    <div>-->
+<!--        <input type="file">-->
+<!--    </div>-->
+<!--    <br>-->
+
+<!--    <h2>Улюблений колір:</h2>-->
+
+<!--    <label for="select-color">Улюблений колір</label>-->
+<!--    <select name="color"id="select-color">-->
+<!--        <option value="red">Червоний</option>-->
+<!--        <option value="green">Зелений</option>-->
+<!--        <option value="blue">Синій</option>-->
+<!--    </select>-->
+
+<!--    <h2> Кнопки:</h2>-->
+
+<!--    <div>-->
+<!--        <input type="submit" value="Відправити">-->
+<!--        <input type="reset" value="Скидання">-->
+<!--    </div>-->
+<!--    <label>-->
+<!--        Улюблений колір:-->
+<!--        <select name="color">-->
+<!--            <option value="red">Червоний</option>-->
+<!--            <option value="green">Зелений</option>-->
+<!--            <option value="blue">Синій</option>-->
+<!--        </select>-->
+<!--    </label>-->
+
+<!--</form>-->
+<!--Задача від чата №2 Створити картку профілю користувача-->
+
+<!--<h1 class="name">Олександр</h1>-->
+<!--<img src="img/avatar_2.jpg" alt="це я">-->
+<!--<div class="block">-->
+<!--    <p>-->
+<!--        Том Соєр — заповзятий, грайливий хлопчисько, справжній хвалько, обожнює красуватися перед іншими хлопцями. Виходячи з натяків Твена, Тому приблизно 12 років. Том уособлює собою безтурботність і чудовий світ дитинства середини XIX століття. Його найкращі друзі — Джо Гарпер і Гекльберрі Фінн. Колись був закоханий у Еммі Лоренс, але пізніше її місце в серці Тома зайняла Ребекка Тетчер (Беккі). У нього є зведений брат Сід, двоюрідна сестра Мері і тітка Поллі. Том — син покійної сестри тітки Поллі. Незважаючи на непосидючий характер, Том дуже багато читає, перевагу віддає пригодницькій літературі.-->
+<!--    </p>-->
+<!--</div>-->
+<!--<div>-->
+<!--    <input class="textbutton2" type="text" value="Написати повідомлення">-->
+<!--</div>-->
+<div class="sale">
+    <a href="https://www.foxtrot.com.ua/uk/actions/47956?filter=headliner">
+        <img src="img/s1.jpg" alt="fox">
+    </a>
+</div>
+<div class="block">
+    <div>
+        <img src="img/s2.jpg">
+    </div>
+    <div class="c1">
+        <select name="sity">
+            <option value="kiyv">Київ</option>
+
+            <option value="lviv">Львів</option>
+
+            <option value="poltava">Полтава</option>
+
+            <option value="odesa">Одеса</option>
+
+        </select>
+
+    </div>
+
+    <div class="custom-dropdown">
+        <!-- Ховаємо оригінальний чекбокс -->
+        <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+
+        <!-- Напис "Покупцям", який буде кнопкою -->
+        <label for="dropdown-toggle" class="dropdown-button">Покупцям</label>
+
+        <!-- Контейнер для випадаючого списку -->
+        <div class="dropdown-content">
+            <a href="#contact">Контакти</a>
+            <a href="#servis">Сервіс</a>
+            <a href="#zsu">Допомога ЗСУ</a>
+            <a href="#callcentre">Call-центр</a>
+            <a href="#about-us">Про нас</a>
+            <a href="#shop-schedule">Графік магазинів</a>
+        </div>
+
+
+    </div>
+    <div class="client">
+        <a href="https://cabinet.tax.gov.ua/login">Увійдіть в особистий кабінет</a>
+    </div>
+
+</div>
+<div class="block-searh">
+
+    <div>
+        <img src="img/s3.jpg" alt="oops">
+    </div>
+
+
+    <div class="search-box">
+        <span class="icon">&#128269;</span> <!-- іконка лупи -->
+        <input type="text" placeholder="Я шукаю ...">
+        <span class="clear-btn">&times;</span> <!-- хрестик -->
+        <button type="submit">ЗНАЙТИ</button>
+    </div>
+
+    <div class="foto1">
+        <img src="img/s4.jpg" alt="oops">
+    </div>
+</div>
+
+<div class="menu">
+    <div class="menu-item">
+        <a href="#" class="menu-link">Телевизоры</a>
+        <div class="submenu">
+            <a href="#">Samsung</a>
+            <a href="#">Sony</a>
+            <a href="#">Hisense</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Аудио, фото, видео</a>
+        <div class="submenu">
+            <a href="#">Аудиосистемы</a>
+            <a href="#">Камеры</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Ноутбуки, ПК, планшеты</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Смартфони</a>
+        <div class="submenu">
+            <a href="#">Samsung</a>
+            <a href="#">Apple</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Техныка для дому</a>
+        <div class="submenu">
+            <a href="#">Пральні машини</a>
+            <a href="#">Пилососи</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Техніка для кухні</a>
+        <div class="submenu">
+            <a href="#">Холодильники</a>
+            <a href="#">Мікрохвильовки</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Краса та здоровя</a>
+        <div class="submenu">
+            <a href="#">Фени</a>
+            <a href="#">Епілятори</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Для геймерів</a>
+        <div class="submenu">
+            <a href="#">Консолі</a>
+            <a href="#">Компютери</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Смарт-гаджети</a>
+        <div class="submenu">
+            <a href="#">Браслети</a>
+            <a href="#">Годинники</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Посуд</a>
+        <div class="submenu">
+            <a href="#">Сковорідки</a>
+            <a href="#">Каструлі</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Спорт і туризм</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Інструменти</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Товари для дітей</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Послуги</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Товари для тварин</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Обмін</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Сад,огород</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Оренда квартир</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Продаж авто</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="#" class="menu-link">Акції</a>
+        <div class="submenu">
+            <a href="#">Ноутбуки</a>
+            <a href="#">Планшеты</a>
+        </div>
+    </div>
+</div>
+<br>
+<div class="block-promo">
+    <div>
+    <a href="https://www.foxtrot.com.ua/uk/actions/47900">
+        <img src="img/s5.jpg" alt="oops">
+    </a>
+</div>
+    <div>
+<a href="https://www.foxtrot.com.ua/uk/shop/kastryuli_bravo_chef_lappetit_228_2503.html">
+    <img src="img/s6.jpg" alt="oops">
+</a>
+</div>
+    <div>
+<a href="https://www.foxtrot.com.ua/uk/outlet">
+    <img src="img/s7.jpg">
+</a>
+</div>
+    <div>
+<a href="https://www.foxtrot.com.ua/uk/actions/47240">
+    <img src="img/s8.jpg">
+</a>
+</div>
+    <div>
+<a href="https://www.foxtrot.com.ua/uk/actions/47133">
+    <img src="img/s9.jpg">
+</a>
+</div>
+</div>
+<h2 class="z1">Популярні категорії</h2>
+<br>
+<div class="block-button">
+
+<div class="p1">
+    <a href="https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony.html">
+    <img src="img/s20.jpg">
+    </a>
+    <div class="text">Смартфони</div>
+</div>
+    <div class="p1">
+        <a href="https://www.foxtrot.com.ua/uk/shop/holodilniki.html">
+            <img src="img/s21.jpg">
+        </a>
+        <div class="text">Холодильники</div>
+    </div>
+    <div class="p1">
+        <a href="https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony.html">
+            <img src="img/s22.jpg">
+        </a>
+        <div class="text">Вентилятори</div>
+    </div>
+    <div class="p1">
+        <a href="https://www.foxtrot.com.ua/uk/shop/stiralki.html">
+            <img src="img/s23.jpg">
+        </a>
+        <div class="text">Пральні машини</div>
+    </div>
+    <div class="p1">
+        <a href="https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony.html">
+            <img src="img/s25.jpg">
+        </a>
+        <div class="text">Кондиціонери</div>
+    </div>
+    <div class="p1">
+        <a href="https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony.html">
+            <img src="img/s26.jpg">
+        </a>
+        <div class="text">Пилососи</div>
+    </div>
+    <div class="p1">
+        <a href="https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony.html">
+            <img src="img/s27.jpg">
+        </a>
+        <div class="text">Ноутбуки</div>
+    </div>
+    <div class="p1">
+        <a href="https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony.html">
+            <img src="img/s28.jpg">
+        </a>
+        <div class="text">Телевізори</div>
+    </div>
+</div>
+</body>
+</html>
+

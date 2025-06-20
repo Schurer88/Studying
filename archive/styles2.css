@@ -1,0 +1,7 @@
+.background{
+    background-image: url('img/Background.png'); /* шлях до твого зображення */
+    width: 1440px;
+    height: 866x;
+    margin: -8px 0px 0px -6px;
+    background-size: 1440px 866px
+}
